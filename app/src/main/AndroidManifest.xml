@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.eat_it">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".dr_confirm_list"></activity>
+        <activity android:name=".dr_dashboard"></activity>
+        <activity android:name=".dr_delivery_accept"></activity>
+        <activity android:name=".dr_delivery_list"></activity>
+
+        <activity android:name=".AdmListView.AdmCustomerListViewActivity"></activity>
+        <activity android:name=".AdmListView.AdmDriverListViewActivity"></activity>
+        <activity android:name=".AdmListView.AdmFoodListViewActivity"></activity>
+        <activity android:name=".dr_update_profile_form"></activity>
+        <activity android:name=".SearchFoods"></activity>
+        <activity android:name=".CreditCardDetails" />
+        <activity android:name=".AdmAddNewFoodActivity" />
+        <activity android:name=".AdmFoodDetailsActivity" />
+        <activity android:name=".CustomerFeedback" />
+        <activity android:name=".dr_login" />
+        <activity android:name=".Final_Order" />
+        <activity android:name=".CustomerProfile" />
+        <activity android:name=".ConfirmOrder" />
+        <activity android:name=".Cart" />
+        <activity android:name=".AdmHomeActivity" />
+        <activity android:name=".AdmCategoryActivity" />
+        <activity android:name=".dr_signupui" />
+        <activity android:name=".Userprofile" />
+        <activity android:name=".FoodDetails" />
+        <activity android:name=".AdminRegister" />
+        <activity android:name=".Adminlogin" />
+        <activity android:name=".Menu" />
+        <activity android:name=".Login" />
+        <activity android:name=".Register" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Theme.AppCompat" />
+    </application>
+
+</manifest>

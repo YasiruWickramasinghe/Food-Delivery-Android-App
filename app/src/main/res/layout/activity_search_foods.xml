@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/interface1"
+    tools:context=".SearchFoods">
+
+    <RelativeLayout
+        android:id="@+id/layout6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/productName"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:hint="Search"/>
+
+        <Button
+            android:id="@+id/Search_for_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@+id/productName"
+            android:layout_toRightOf="@+id/product_name"
+            android:text="Search"
+            android:background="@drawable/button3"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:id="@+id/searchList"
+        android:layout_below="@+id/layout6"></androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>
